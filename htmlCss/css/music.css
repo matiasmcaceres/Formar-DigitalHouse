@@ -1,0 +1,51 @@
+body {
+  background-image: url('../img/emilia-music-top.jpg');
+  background-size: 100% 160px;
+  background-repeat: no-repeat;
+  background-position: right 0;
+  font-family: 'Open Sans';
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+p.header {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, .5);
+  text-align: right;
+  padding: 20px 0;
+}
+
+p.redes {
+  text-align: right;
+}
+
+h1{
+  font-size: 70px;
+  font-family: raleway;
+  margin-top: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  color: rgb(85, 85, 85);
+}
+
+
+h2{
+  font-family: raleway;
+  margin-top: 60px;
+}
+
+ol{
+  list-style-type: decimal-leading-zero;
+}
+
+a.go-top{
+  color: grey;
+}

@@ -1,0 +1,44 @@
+body {
+  font-family: 'Open Sans';
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+p.header {
+  margin-top: 30px;
+  text-align: right;
+  padding: 20px 0;
+}
+
+p.redes {
+  text-align: right;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: raleway;
+}
+
+h2{
+  font-family: raleway;
+}
+
+h4{
+  font-family: raleway;
+  color: #1c9a85;
+  font-size: 20px;
+  margin-bottom: 16px;
+  margin-top: 34px;
+}
+
+iframe{
+  margin-bottom: 40px;
+}
+
+ul{
+  padding-left: 0;
+}
+
