@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+  <div class="formulario">
+    <form action="">
+      <div class="cajaFrom">
+        <h4>¿De donde sos?</h4>
+        <Select name="pais" id="">
+          <option selected>Seleccione un pais</option>
+          <option value="ar">Argentina</option>
+          <option value="br">Brasil</option>
+          <option value="uy">Uruguay</option>
+        </Select>
+      </div>
+      <div class="cajaFrom">
+        <h4>¿Qué te pareció la iluminación del ambiente?</h4>
+        <input type="radio" name="ambiente" id="ambiente1" value="3"><label for="ambiente1">Muy acuerdo</label>
+        <input type="radio" name="ambiente" id="ambiente2" value="2"><label for="ambiente2">Malisima</label>
+        <input type="radio" name="ambiente" id="ambiente3" value="1"><label for="ambiente3">Puede mejorar</label>
+      </div>
+      <div class="cajaFrom">
+        <h4>¿Qué plato te gusto más?</h4>
+        <input type="checkbox" name="gustos" id="gusto1" value="1"><label for="gusto1">Entrada</label>
+        <input type="checkbox" name="gustos" id="gusto2" value="2"><label for="gusto2">Plato Principal</label>
+        <input type="checkbox" name="gustos" id="gusto3" value="3"><label for="gusto3">Postres</label>
+        <input type="checkbox" name="gustos" id="gusto4" value="4"><label for="gusto4">Otros</label>
+      </div>
+      <div class="cajaFrom">
+        <h4>¿Recomendarias el lugar?</h4>
+        <input type="radio" name="recomienda" id="si" value="si"><label for="si">Si</label>
+        <input type="radio" name="recomienda" id="no" value="no"><label for="no">no</label>
+      </div>
+      <div class="cajaFrom">
+        <h4>
+          ¿Por qué?
+        </h4>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+      </div>
+      <div class="cajaFrom">
+        <h4>Dejanos tus datos y nos pondremos en contacto con vos</h4>
+        <label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre">
+        <label for="email">Email: </label><input type="text" name="email" id="email">
+      </div>
+      <div class="btn">
+        <button type="submit" class="enviar">Enviar</button> <button type="reset" class="reset">Borrar</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

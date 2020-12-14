@@ -1,0 +1,73 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+}
+
+body{
+  background-image: url("../img/fondoFormularios.jpg");
+  background-attachment: fixed;
+}
+
+.formulario{
+  width: 600px;
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border:solid 5px #f58823;
+  padding: 20px;
+}
+
+h4{
+  margin: 10px 0;
+}
+
+input{
+  margin-right: 5px;
+}
+
+label:hover{
+  color: #000080;
+}
+
+.cajaFrom{
+  margin: 20px 0;
+}
+
+textarea{
+  resize:none;
+  width: 100%;
+}
+
+button.enviar{
+  background-color: #f58823;
+  color: #fff;
+  font-weight: bold;
+  width: 45%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+button.reset{
+  background-color: #fff;
+  color: #f58823;
+  font-weight: bold;
+  width: 45%;
+  padding: 8px;
+  border: 3px #f58823 solid;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
