@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+body {
+  background-image: url("../img/bg-2.png");
+  color: rgb(14, 14, 14);
+}
+
+div.master {
+  width: 1140px;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+/* HEADER */
+
+header {
+  background-color: orangered;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+header img {
+  float: left;
+  padding: 13px;
+}
+
+header nav {
+  padding: 7px;
+  overflow: hidden;
+}
+
+header nav ul.nav {
+  float: left;
+  overflow: hidden;
+}
+
+header nav ul.log {
+  float: right;
+  overflow: hidden;
+}
+
+header nav ul li {
+  float: left;
+  list-style: none;
+  margin: 0 10px;
+  /* border-bottom: 2px solid transparent;
+  transition: all .5s; */
+}
+
+/* div.master header nav ul li:hover {
+  border-bottom: 2px solid hsla(0, 0%, 100%, 0.842);
+} */
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+div.master header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: all .5s;
+}
+
+div.master header nav ul li a:hover {
+  background-size: 100% 2px;
+}
+
+/* MAIN */
+
+main.home {
+  width: 800px;
+  float: left;
+}
+
+/* PRODUCTOS */
+
+section.productos {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+section.productos article.producto {
+
+  margin: 10px 10px 20px 10px;
+  width: 380px;
+  float: left;
+}
+
+section.productos article.producto img {
+  width: 100%;
+}
+
+section.productos article.producto h2 {
+  font-size: 22px;
+}
+
+section.productos article.producto button {
+  width: 95px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: orangered;
+  padding: 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+section.productos article.producto button:hover {
+  background-color: rgba(255, 68, 0, 0.753);
+}
+
+/* ASIDE */
+
+aside {
+  width: 320px;
+  float: right;
+}
+
+aside h2 {
+  background-color: #fff;
+  padding: 10px;
+  margin: 0px 0px 16px 0px;
+  border: 1px solid #c4c4c4;
+
+}
+
+/* TUTORIALES */
+
+aside section.tutoriales div.tutoriales {
+  background-color: #fff;
+  margin-bottom: 20px;
+
+}
+
+aside section.tutoriales div.tutoriales article {
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+
+}
+
+aside section.tutoriales div.tutoriales article img {
+  float: left;
+}
+
+aside section.tutoriales div.tutoriales article p {
+  float: right;
+  width: 175px;
+}
+
+/* PUBLICIDAD */
+
+aside section.publicidad div.publicidad {
+  background-color: #fff;
+}
+
+aside section.publicidad div.publicidad article {
+  padding: 10px;
+}
+
+/* Formularios */
+
+div.form {
+  width: 350px;
+  margin: auto;
+}
+
+div.form h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(49, 49, 49);
+}
+
+div.form div.Entradas label {
+  margin-top: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: rgb(49, 49, 49);
+}
+
+div.form div.Entradas input {
+  width: 100%;
+  margin: 10px 0px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+div.form div.Recordar {
+  overflow: hidden;
+  margin: 15px 0px;
+}
+
+div.form div.Recordar input {
+  float: right;
+}
+
+div.form div.Recordar label {
+  font-weight: bold;
+  color: rgb(49, 49, 49);
+  float: right;
+  padding-left: 10px;
+}
+
+div.form button {
+  background-color: rgb(76, 172, 231);
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+div.form p {
+  color: red;
+}
+
+/* Registro */
+
+div.form div.negrita {
+  margin-top: 20px;
+
+}
+
+div.form div.negrita label {
+  font-weight: bold;
+}
+
+div.form div.negrita input {
+  margin: 20px 4px;
+
+}
+
+div.form div.terminos {
+  color: rgb(68, 68, 68);
+  font-weight: 500;
+}
+
+div.form div.botones label {
+  color: rgb(68, 68, 68);
+  font-weight: 500;
+}
+
+div.form div.botones button {
+  width: 150px;
+
+}

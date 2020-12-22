@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="master">
+    <!-- header -->
+    <header>
+      <a href="home.html">
+        <img src="img/logo.png" alt="logo">
+      </a>
+      <nav>
+        <ul class="nav">
+          <li><a href="home.html">SMARTPHONES</a></li>
+          <li><a href="home.html">TABLETS</a></li>
+          <li><a href="home.html">COMPUTADORAS</a></li>
+        </ul>
+        <ul class="log">
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="registro.html">REGISTRO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header -->
+    <!-- main -->
+    <main>
+      <div class="form">
+        <h1>BIENVENIDO</h1>
+        <form action="home.html">
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" class="texto" id="email" placeholder="Email">
+          </div>
+          <div class="input">
+            <label for="password">Contraseña</label>
+            <input type="password" class="texto" id="password" placeholder="Contraseña">
+          </div>
+          <div class="recordar">
+            <p class="recordar">
+              <input type="checkbox" name="recordar" id="recordar" class="recordar">Recordame
+            </p>
+          </div>
+          <p class="aviso">La combinación ingresada de email y contraseña ingresada no es válida.</p>
+          <button type="submit">Ingresar</button>
+        </form>
+      </div>
+    </main>
+    <!-- main -->
+  </div>
+</body>
+</html>
