@@ -1,0 +1,2 @@
+express mercadoliebre --ejs // crea express ya configurado
+npm i // instala dependencias

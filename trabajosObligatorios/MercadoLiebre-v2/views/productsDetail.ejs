@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <%- include("partials/head.ejs") %>
+  <!-- HEAD -->
+
+  <body>
+    <!-- Header -->
+    <%- include("partials/header.ejs") %>
+    <!-- /Header -->
+
+    <div class="detail-page">
+      <!-- ultima visita -->
+      <div class="container products-wrapper">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="products-title">
+              Detalle del producto: <%= product.name %>
+            </h2>
+          </div>
+          <div class="col-12">
+            <section class="product-boxDetail row">
+              <section class="col-12 col-lg-8 image-and-description">
+                <img src="/images/<%- product.image %> " alt="" />
+                <p class="description"><%= product.description %></p>
+              </section>
+              <article class="col-12 col-lg-4 detail">
+                <h2><%= product.name %></h2>
+
+                <% if (product.discount > 0) { %>
+                <span class="prev-price">
+                  <%= toThousand(product.price) %>
+                </span>
+                <span class="discount"> / <%= product.discount %>%OFF </span>
+                <% } %>
+                <h3 class="price-final">
+                  <%- toThousand(product.price - Math.round(product.price / 100
+                  * product.discount)) %>
+                </h3>
+
+                <div class="message-container">
+                  <div class="tarjeta">
+                    <i class="fas fa-credit-card"></i>
+                    <p>Pagá en 12 cuotas sin interes</p>
+                  </div>
+                </div>
+                <div class="message-container">
+                  <div class="tarjeta">
+                    <i class="fas fa-store"></i>
+                    <p>Retiro gratis en locales del vendedor</p>
+                  </div>
+                </div>
+                <button>COMPRAR AHORA</button>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /ultima visita -->
+
+    <!-- FOOTER -->
+    <%- include("partials/footer.ejs") %>
+    <!-- FOOTER -->
+  </body>
+</html>

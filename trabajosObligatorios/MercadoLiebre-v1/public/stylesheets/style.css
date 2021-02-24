@@ -1,0 +1,251 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* VARIABLES */
+:root {
+  --color-amarillo: #EAC926;
+  --color-grisClaro: #ebebeb;
+  --color-grisOscuro: #666666;
+  --color-azul: #03264C;
+  --color-verde: #3AB54B;
+  --color-celeste: #1259c3;
+  --fuente: "Roboto";
+}
+
+/* GENERALES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente);
+  font-weight: 300;
+  background-color: var(--color-grisClaro);
+}
+
+/* HEADER */
+header {
+  background-color: var(--color-amarillo);
+  padding: 20px 0;
+}
+
+header .header-container {
+  max-width: 1140px;
+}
+
+header form {
+  background-color: #fff;
+  border: 1px solid var(--color-grisClaro);
+  border-radius: 5px;
+  padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header form input {
+  background-color: none;
+  border: none;
+  border-right: 2px solid var(--color-grisClaro);
+  padding: 0px 10px;
+  width: 50%;
+  flex-grow: 1;
+}
+
+header form button {
+  background-color: none;
+  border: none;
+  color: var(--color-grisOscuro);
+  margin: 0 8px;
+}
+
+header .div-cuotas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header a.cuotas {
+  margin: 20px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+/* nav */
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header nav button.burger {
+  background-color: var(--color-azul);
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+header nav ul li {
+  color: #000;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+header nav ul li a {
+  color: #000;
+}
+
+header nav ul li a:hover {
+  text-decoration: none;
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  display: none;
+}
+
+/* PRODUCTOS */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productos h2 {
+  font-size: 24px;
+  color: var(--color-grisOscuro);
+  margin: 30px 0;
+}
+
+.productos .contenido {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: transform .5s ease;
+}
+
+.productos .contenido:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.productos img {
+  width: 100%;
+}
+
+.productos .datos {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  border-top: 1px solid var(--color-grisClaro);
+  padding: 20px;
+  position: relative;
+}
+
+.productos .datos h3 {
+  margin-bottom: 0;
+}
+
+.productos .datos .s {
+  color: var(--color-verde);
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.productos .datos p {
+  margin-top: 10px;
+}
+
+.productos .datos i {
+  color: var(--color-verde);
+  background-color: #fff;
+  border: 1px solid var(--color-verde);
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 1.3rem;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #fff;
+  padding: 10px 10px 0 10px;
+}
+
+.footer-width {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+footer article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer article i {
+  font-size: 35px;
+  color: var(--color-celeste);
+  margin: 20px 0 0 0;
+}
+
+footer article h4,
+footer article p {
+  color: var(--color-grisOscuro);
+  margin: 10px 0 0 0;
+}
+
+.footer .d {
+  border-top: 1px solid var(--color-grisClaro);
+  margin-top: 40px;
+}
+
+.copyright {
+  color: var(--color-grisOscuro);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width:768px) {
+
+  /* header */
+  header .div-cuotas {
+    justify-content: right;
+  }
+
+  header a.cuotas {
+    margin: 0;
+    text-align: right;
+  }
+
+  header nav ul li {
+    margin: 0 10px;
+  }
+
+  header nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  header nav ul li:first-child {
+    margin-left: 0;
+  }
+
+  /* BANNER */
+  .banner {
+    display: block;
+  }
+}
